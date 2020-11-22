@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Domain.Core", "MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj", "{72D1F02F-DBA5-4106-AA67-547A919F515D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infra.Bus", "MicroRabbit.Infra.Bus\MicroRabbit.Infra.Bus.csproj", "{B5B01E7D-9AB5-4292-ADB5-431C1C52023F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Infra.Bus", "MicroRabbit.Infra.Bus\MicroRabbit.Infra.Bus.csproj", "{B5B01E7D-9AB5-4292-ADB5-431C1C52023F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infra.IoC", "MicroRabbit.Infra.IoC\MicroRabbit.Infra.IoC.csproj", "{6FCC71B5-75CB-4BDE-AAE4-83FDD1B3BA37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{B5B01E7D-9AB5-4292-ADB5-431C1C52023F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5B01E7D-9AB5-4292-ADB5-431C1C52023F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5B01E7D-9AB5-4292-ADB5-431C1C52023F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FCC71B5-75CB-4BDE-AAE4-83FDD1B3BA37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FCC71B5-75CB-4BDE-AAE4-83FDD1B3BA37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FCC71B5-75CB-4BDE-AAE4-83FDD1B3BA37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FCC71B5-75CB-4BDE-AAE4-83FDD1B3BA37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{72D1F02F-DBA5-4106-AA67-547A919F515D} = {7F8620AA-B0DD-42C7-AF74-FA7E013C63B8}
 		{B5B01E7D-9AB5-4292-ADB5-431C1C52023F} = {A6C0C92A-E247-4576-9611-921D8924C8B7}
+		{6FCC71B5-75CB-4BDE-AAE4-83FDD1B3BA37} = {FCA3F68B-B8BF-4F42-A5FD-E22DBE7872A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A60E733C-3A7A-47B4-8C19-265F04850732}

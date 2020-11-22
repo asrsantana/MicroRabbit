@@ -92,10 +92,10 @@ namespace MicroRabbit.Infra.Bus
             channel.BasicConsume(eventName, true, consumer);
         }
 
-        private async Task Consumer_Received(object sender, BasicDeliverEventArgs @event)
+        private async Task Consumer_Received(object sender, BasicDeliverEventArgs e)
         {
-            var eventName = @event.RoutingKey;
-            var message = Encoding.UTF8.GetString(@event.Body.Span);
+            var eventName = e.RoutingKey;
+            var message = Encoding.UTF8.GetString(e.Body.Span);
 
             try
             {
