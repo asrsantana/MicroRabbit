@@ -1,6 +1,6 @@
 using System;
 
-namespace MicroRabbit.Banking_.Api
+namespace MicroRabbit.Banking.Api
 {
     public class WeatherForecast
     {

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MicroRabbit.Banking_.Api
+namespace MicroRabbit.Banking.Api
 {
     public class Program
     {
