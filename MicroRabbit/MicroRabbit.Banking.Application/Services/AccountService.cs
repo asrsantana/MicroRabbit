@@ -4,16 +4,14 @@ using MicroRabbit.Banking.Domain.Commands;
 using MicroRabbit.Banking.Domain.Interfaces;
 using MicroRabbit.Banking.Domain.Models;
 using MicroRabbit.Domain.Core.Bus;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MicroRabbit.Banking.Application.Services
 {
     public class AccountService : IAccountService
     {
         private readonly IAccountRepository _accountRepository;
-        private readonly IEventBus _bus;
+        private readonly IEventBus  _bus;
 
         public AccountService(
             IAccountRepository accountRepository,

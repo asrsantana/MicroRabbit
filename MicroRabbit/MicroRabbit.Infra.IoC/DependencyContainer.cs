@@ -16,14 +16,11 @@ namespace MicroRabbit.Infra.IoC
     {
         public static void RegisterServices(IServiceCollection services)
         {
-
-
             // Domain Bus
             services.AddTransient<IEventBus, RabbitMQBus>();
 
             //Domain Bancking Commands
             services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
-
 
             // Application Services
             services.AddTransient<IAccountService, AccountService>();
