@@ -1,6 +1,9 @@
 using MediatR;
 using MicroRabbit.Banking.Data.Context;
+using MicroRabbit.Domain.Core.Bus;
 using MicroRabbit.Infra.IoC;
+using MicroRabbit.Transfer.Domain.EventHandlers;
+using MicroRabbit.Transfer.Domain.Events;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System;
 using System.Reflection;
 
 namespace MicroRabbit.Banking.Api
@@ -39,8 +43,6 @@ namespace MicroRabbit.Banking.Api
             services.AddMediatR(typeof(Startup));
 
             RegisterServices(services);
-
-
         }
 
         private void RegisterServices(IServiceCollection services)
@@ -70,7 +72,7 @@ namespace MicroRabbit.Banking.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });
+            });       
         }
     }
 }
