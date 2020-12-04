@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>MicroRabbit.Banking_.Api</RootNamespace>
+    <RootNamespace>MicroRabbit.Banking.Api</RootNamespace>
     <UserSecretsId>89ae3b44-f70c-49e4-98b7-fea8a050cc9f</UserSecretsId>
   </PropertyGroup>
 

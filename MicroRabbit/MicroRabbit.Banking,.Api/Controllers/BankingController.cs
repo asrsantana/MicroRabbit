@@ -4,9 +4,9 @@ using MicroRabbit.Banking.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace MicroRabbit.Banking_.Api.Controllers
+namespace MicroRabbit.Banking.Api.Controllers
 {
-    [Route("api/[controller])")]
+    [Route("api/[controller]")]
     [ApiController]
     public class BankingController : Controller
     {

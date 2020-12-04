@@ -42,6 +42,8 @@ namespace MicroRabbit.Banking.Api
 
             services.AddMediatR(typeof(Startup));
 
+            services.AddCors();
+
             RegisterServices(services);
         }
 
